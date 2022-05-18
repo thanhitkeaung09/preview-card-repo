@@ -1,0 +1,88 @@
+
+$theme-colors:(
+        "primary":hsl(215, 51%, 70%),
+        "secondary":hsl(178, 100%, 50%),
+        "white":hsl(0, 0%, 100%),
+        "success":hsl(216, 50%, 16%),//card-background
+        "warning":hsl(215, 32%, 27%)//line
+);
+
+$body-bg:hsl(217, 54%, 11%);
+$border-radius:15px;
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+$font-family-sans-serif:'Outfit', sans-serif;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/animate.css/animate.min.css";
+
+
+
+
+p{
+  font-size: 18px !important;
+
+}
+.avatar{
+  width: 50px;
+  height: 50px;
+}
+.img-card{
+  position: relative;
+  transition: 0.5s;
+  width: 100%;
+  height: 100%;
+  border-right: 15px !important;
+  background-color: hsl(178deg 100% 50% / 67%);
+
+}
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.hover-div {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.img-card:hover .image {
+  opacity: 0.3;
+}
+.img-card:hover .hover-div{
+  opacity: 0.3;
+}
+
+
+.card-head{
+  transition: 0.5s;
+
+}
+.card-head:hover{
+  color: var(--bs-secondary) !important;
+}
+.card-name{
+  transition: 0.5s;
+
+}
+.card-name:hover{
+  color: var(--bs-secondary) !important;
+}
+
+.card-name:hover{
+  color: var(--bs-secondary);
+
+}
+.img-card:hover .hover-div {
+  opacity: 1;
+}
+
+
